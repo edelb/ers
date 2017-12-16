@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Edel's ERS - Sign In</title>
+	<link href="../css/signin.css" rel="stylesheet" type="text/css" />
+	<link href="../css/default.css" rel="stylesheet"/>
+	<link href="../css/loader.css" rel="stylesheet"/>
+	<link href="../css/alerts.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icons/money-bag-icon.png" />
+	
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+
+	<!-- Menu -->
+	<div id="menuScript"></div>
+	<script src="../js/menu.js"></script>
+	
+	<div id="info" align="center"></div>
+	
+	<!-- Login Form -->
+	<div class="main" align="center">
+		<form onsubmit="event.preventDefault(); checkLogin();">
+			<div>
+				<img id="user_icon" class="pic" src="../images/icons/user1.png" />
+			</div>
+			<div class="signin_heading ">Sign In</div>
+			<div class="box">
+				<div>
+					<input id="username" type="text" class="input email_icon" placeholder="Username" required>
+				</div>
+				<div>
+					<input id="password" type="password" class="input password_icon" placeholder="Password" required>
+				</div>
+				<div>
+					<div id="loader-id" class="loader"></div>
+					<input id="btn_signin" type="submit" class="btn_signin button1" value="Sign In">
+				</div>
+				<hr />
+				<div class="signin_links">
+					<a href="javascript:void(0);">New User?</a>
+					<br>
+					<a href="javascript:void(0);">Forgot email or password?</a>
+				</div>
+				<br />
+			</div>
+		</form>
+	</div>
+	<br />
+	
+	<script src="../js/login.js"></script>
+	<script src="../js/alerts.js"></script>
+	
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
